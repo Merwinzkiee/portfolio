@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600");
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
@@ -7,12 +7,14 @@
   /* outline: 1px solid red; */
 }
 
-
-
-.logo{
+.logo {
   width: 2.5rem;
 }
 
+.container{
+  overflow-y: hidden;
+
+}
 .heading {
   font-size: 5rem;
   font-weight: 700;
@@ -57,7 +59,7 @@
   cursor: pointer;
 }
 
-.page-title{
+.page-title {
   font-size: 3rem;
   color: #c5c5c5;
   font-weight: 700;
@@ -68,7 +70,12 @@ hr {
   border: 0;
   width: 50%;
   height: 2px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 .timeline-title {
@@ -118,10 +125,10 @@ hr {
   padding-bottom: 20px;
 }
 
-.timeline-content{
-    color: #c5c5c5;
-    font-weight: 100;
-    font-size: 14px;
+.timeline-content {
+  color: #c5c5c5;
+  font-weight: 100;
+  font-size: 14px;
 }
 
 .timeline ul li:nth-child(odd):before {
@@ -222,14 +229,13 @@ hr {
 }
 
 .skill-container {
-  background: rgba( 255, 255, 255, 0.2 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 1.5px );
-  -webkit-backdrop-filter: blur( 1.5px );
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(1.5px);
+  -webkit-backdrop-filter: blur(1.5px);
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
 }
-
 
 .skill-container {
   display: flex;
@@ -238,7 +244,44 @@ hr {
 }
 
 .icon {
-  width: 35px; 
+  width: 35px;
   height: 35px;
-  margin: 18px; 
+  margin: 18px;
+  transition: transform 0.2s;
+}
+
+.navbar-toggler-icon {
+  color: white !important;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.card img {
+  width: 3.2rem;
+  height: 3.2rem;
+}
+
+.card {
+  position: relative;
+  background-image: url("/assets/img/img-bg2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(26, 26, 26, 0.858);
+  z-index: -1;
+}
+
+.card-text{
+  color: #c5c5c5;
 }
