@@ -20,8 +20,9 @@
         <div class="container-fluid">
             <a class="navbar-brand fw-bolder fs-5" href="#" style="color:#D80C10;"><img class="logo img-fluid"
                     src="./assets/img/logo2.png" alt=""><span>Merwinzkie</span></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse nav-underline" id="navbarNavDropdown">
@@ -33,10 +34,10 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">Projects</a>
+                        <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" href="#">Service</a>
+                        <a class="nav-link" href="#">Projects</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="#">Contact</a>
@@ -45,6 +46,8 @@
             </div>
         </div>
     </nav>
+
+
     <!-- END OF NAVIGATION -->
 
     <!-- HERO SECTION -->
@@ -69,48 +72,47 @@
     <div class="container text-center" id="about">
         <p class="page-title mt-5" data-aos="fade-in">ABOUT ME</p>
         <div class="text-center">
-            <hr>
+            <!-- <hr> -->
         </div>
         <div class="my-details">
             <p class="timeline-title" data-aos="fade-up">Who I am?</p>
             <p class="" data-aos="zoom-in"
                 style="color: #c5c5c5; padding: 0 15% 0 15%; text-justify: inter-word; font-weight: 100; font-size: 14px;">
-                Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Soluta eveniet quaerat ut amet atque odio
-                tempore sapiente dicta voluptatum perspiciatis eius quod labore eaque minus, nihil temporibus enim!
-                Voluptates quo odio praesentium! Exercitationem illum consequatur pariatur iusto mollitia corruptib
-                adipisci.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta eveniet quaerat ut amet atque odio
-                tempore sapiente dicta voluptatum perspiciatis eius quod labore eaque minus, nihil temporibus enim!
-                Voluptates quo odio praesentium! Exercitationem illum consequatur pariatur iusto mollitia corrupti.</p>
+                Greetings! I'm Merwin Sevidal, a soon-to-be Front-end Developer. I'm deeply passionate about crafting
+                captivating website designs and have dedicated my career to this field. When I'm not immersed in
+                creating website styles or designs, I enjoy quality time with my loved ones. I'm constantly seeking new
+                opportunities for personal and professional growth, eagerly anticipating what the future has in store.
+                Thank you for taking the time to get to know me a bit. In this portfolio, you'll discover samples of my
+                work, along with details about my education, skills, and experience.</p>
         </div>
     </div>
     </div>
+    <!-- END OF ABOUT SECTION -->
 
-
+    <!-- SKILLS SECTION -->
     <div class="container text-center mt-5">
-        <p class="timeline-title">
+        <p class="timeline-title" data-aos="fade-in">
             Skills
         </p>
-        <div style="margin: 0 20% 0 20%;">
-                <div class="skill-container p-4">
-                    <img src="/assets/icons/html.png" alt="" class="icon">
-                    <img src="/assets/icons/css.png" alt="" class="icon">
-                    <img src="/assets/icons/js.png" alt="" class="icon">
-                    <img src="/assets/icons/php.png" alt="" class="icon">
-                    <img src="/assets/icons/bootstrap.png" alt="" class="icon">
-                    <img src="/assets/icons/php.png" alt="" class="icon">
-                    <img src="/assets/icons/mysql.png" alt="" class="icon">
-                    <img src="/assets/icons/python.png" alt="" class="icon">
-                    <img src="/assets/icons/ionic.png" alt="" class="icon">
-                    <img src="/assets/icons/angular.png" alt="" class="icon">
-                </div>
+        <div style="margin: 0 20% 0 20%;" data-aos="fade-up">
+            <div class="skill-container p-4">
+                <img src="/assets/icons/html.png" alt="" class="icon">
+                <img src="/assets/icons/css.png" alt="" class="icon">
+                <img src="/assets/icons/js.png" alt="" class="icon">
+                <img src="/assets/icons/php.png" alt="" class="icon">
+                <img src="/assets/icons/bootstrap.png" alt="" class="icon">
+                <img src="/assets/icons/nodejs.png   " alt="" class="icon">
+                <img src="/assets/icons/mysql.png" alt="" class="icon">
+                <img src="/assets/icons/python.png" alt="" class="icon">
+                <img src="/assets/icons/ionic.png" alt="" class="icon">
+                <img src="/assets/icons/angular.png" alt="" class="icon">
+            </div>
         </div>
-
     </div>
+    <!-- END OF SKILLS SECTION -->
 
-
-    <div class="container mt-5" id="">
+    <!-- EXPERIENCE SECTION -->
+    <div class="container mt-5 mb-0">
         <h1 class="timeline-title" data-aos="fade-up">Experience</h1>
         <div class="timeline">
             <ul>
@@ -162,31 +164,101 @@
             </ul>
         </div>
     </div>
-    <!-- END OF ABOUT PAGE -->
+    <!-- END OF EXPERIENCE SECTION -->
+
+
+    <!-- SERVICES -->
+    <div class="container" id="services">
+        <p class="page-title text-center mt-5" data-aos="fade-in">SERVICES</p>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-4" data-aos="fade-up">
+                <div class="col mb-4">
+                    <div class="card bg-dark">
+                        <img src="/assets/img/ui.png" class="card-img-top img-fluid m-3" alt="...">
+                        <span style="color: #D80C10!important;" class="m-2 fs-5 fw-bolder">UI / UX</span>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card bg-dark">
+                        <img src="/assets/img/logo-design.png" class="card-img-top img-fluid m-3" alt="...">
+                        <span style="color: #D80C10!important;" class="m-2 fs-5 fw-bolder">LOGO MAKING</span>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card bg-dark">
+                        <img src="/assets/img/image-editing.png" class="card-img-top img-fluid m-3" alt="...">
+                        <span style="color: #D80C10!important;" class="m-2 fs-5 fw-bolder">IMAGE EDITING</span>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card bg-dark">
+                        <img src="/assets/img/web-design.png" class="card-img-top img-fluid m-3" alt="...">
+                        <span style="color: #D80C10!important;" class="m-2 fs-5 fw-bolder">WEB DEVELOPEMENT</span>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <p class="page-title text-center mt-5" data-aos="fade-in">RECENT PROJECTS</p>
+        <div class="container project-container">
+
+        </div>
+    </div>
+
+
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="text/javascript">
+        var typed = new Typed('#element', {
+            strings: ['Merwin Sevidal'],
+            typeSpeed: 150,
+            showCursor: false,
+            // loop: true,
+
+        });
+
         AOS.init(
             {
                 duration: 1000,
             }
         );
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Merwin Sevidal'],
-            typeSpeed: 80,
-            showCursor: false,
-            loop: true,
-
+        // Wait for the document to be fully loaded
+        document.addEventListener("DOMContentLoaded", function () {
+            var navbarToggler = document.getElementById('navbar-toggler');
+            var navbarTogglerIcon = navbarToggler.querySelector('.navbar-toggler-icon');
+            navbarTogglerIcon.style.color = "white!important";
         });
-
-
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
+
 </body>
 
 </html>
